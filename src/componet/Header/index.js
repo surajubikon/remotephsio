@@ -49,7 +49,7 @@ const Header = () => {
                     <nav className="menu-items">
                         <ul>
                             <li> <NavLink exact to="/" activeClassName="active"> Home </NavLink></li>
-                            <li><Link to="/">About uss</Link></li>
+                            <li><Link to="/">About us</Link></li>
                              {/* <li><Link to="/about">About us</Link></li> */}
                             <li><Link to="/">Product</Link></li>
                             <li> <NavLink to="/contact" activeClassName="active"> Contact </NavLink></li>
