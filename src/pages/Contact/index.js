@@ -13,20 +13,26 @@ const contact = () => {
         <section className="contact-sec sec-pad">
           <div className="container">
             <div className="row">
+              <div className="col-sm-12 mb-5">
+                <h4>We’re Here to Help! </h4>
+                  <p>At Remote Physios, we are committed to providing exceptional service and support to ensure you have the best experience possible. Whether you have questions about our services, need help with booking a session, or require technical assistance with our IoT-enabled devices, we are just a message away.</p>
+                  <p>Feel free to reach out to us for any queries or concerns. Our team is available to assist you and guide you through your physiotherapy journe.</p>
+                  <p>Or, simply fill out the form below, and we’ll get back to you as soon as possible.</p>
+              </div>
               <div className="col-md-6">
                 <div className="contact-detail">
 
                   <ul className="contact-ul nav flex-column">
-                    <li className='d-flex align-items-start'><i className="fa fa-location-dot"></i> Akshya Nagar 1st Block 1st Cross, Rammurthy nagar, Bangalore-560016 </li>
+                    <li className='d-flex align-items-start'><i className="fa fa-location-dot"></i> <b> DK 2 / 373 Danish Kunj Kolar Road Bhopal 462042 MP India </b> </li>
 
                     <li>
                       <i className="fa fa-phone"></i>
-                      <a href="tel:08510004495"><b>+91 9876543210</b></a>
+                      <a href="tel:08510004495"><b>+91 747-047-8888</b></a>
                     </li>
 
                     <li>
                       <i className="fa-solid fa-envelope"></i>
-                      <a href="mailto:pardeepkumar4bjp@gmail.com"><b> Demo@gmail.com</b></a>
+                      <a href="mailto:pardeepkumar4bjp@gmail.com"><b> Contact@remotephysios.com</b></a>
                     </li>
                   </ul>
                 </div>
@@ -48,7 +54,13 @@ const contact = () => {
                     </div>
 
                     <div className="col-sm-6">
-                      <input type="text" name="sub" placeholder="Subject" className="inptFld" required />
+                      <select className='inptFld'>
+                          <option> Booking Inquiry</option>
+                          <option> Rescheduling/Cancellation</option>
+                          <option> Technical Support</option>
+                          <option> General Information</option>
+                          <option> Other </option>
+                      </select>
                     </div>
 
                     <div className="col-12">
@@ -64,8 +76,22 @@ const contact = () => {
             </div>
 
           </div>
-        </section>            
-        <div class="opcrm-webform" id="opcrm-webform-66f110a634871595791e238d" data-form-url="https://forms.onepagecrm.com/66f110a634871595791e238d/"></div>
+        </section>    
+        
+        
+        <div className='py-5' style={{background:"#f4f4f4"}}>
+          {/* <div class="opcrm-webform" id="opcrm-webform-66f110a634871595791e238d" data-form-url="https://forms.onepagecrm.com/66f110a634871595791e238d/"></div> */}
+          <div style={{ textAlign: 'center', margin: '20px' }}>
+            <iframe
+              src="https://forms.onepagecrm.com/66f110a634871595791e238d/"
+              width="100%"
+              height="1006"
+              frameBorder="0"
+              title="OnePageCRM Form"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>  
     <Footer />    
   </>
     );

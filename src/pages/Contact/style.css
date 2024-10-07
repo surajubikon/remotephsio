@@ -1,7 +1,7 @@
 .contact-bg  {
     background-image:url(../../assets/images/theme-2/contact-img.jpg);
     background-size: 100%;
-    background-position: center;
+    background-position: top;
     height: 274px;
     /* filter: blur(1px); */
     background-repeat: no-repeat;
@@ -94,12 +94,12 @@
     background-color: #00acee;
   }
   
-  form.contFrm {
+  .contact-sec form.contFrm {
     max-width: 396px;
     margin: auto;
   }
   
-  .inptFld {
+  .contact-sec .inptFld {
     width: 100%;
     height: 50px;
     border: 0;
@@ -111,7 +111,7 @@
     background-color: #f4f4f4;
   }
   
-  .inptFld:focus {
+  .contact-sec .inptFld:focus {
     outline-offset: -4px;
     outline: 1px solid #f93;
   }
@@ -120,7 +120,7 @@
     height: 75px;
     padding-top: 5px;
   }
-  .inptBtn {
+  .contact-sec .inptBtn {
     height: 50px;
     border: 0;
     background: var(--primary-color);
@@ -136,7 +136,7 @@
   /* Responcive css Start */
   
   @media (max-width: 991px) {
-    .sec-pad {
+    .contact-sec .sec-pad {
       padding: 20px 0px;
     }
   
@@ -151,7 +151,7 @@
       margin-right: 6px;
     }
   
-    .inptFld {
+    .contact-sec .inptFld {
       height: 40px;
       margin: 0 0 10px;
       padding: 0 14px;
@@ -173,7 +173,7 @@
   }
   
   @media (max-width: 575px) {
-    .section-title {
+    .contact-sec .section-title {
       font-size: 26px;
       font-weight: 500;
     }

@@ -19,7 +19,7 @@ import cta from '../../assets/images/theme-2/cta.png';
 import Video from '../../assets/video/video.mp4';
 
 
-import { FaHeart, FaUserAlt, FaPlay, FaChevronRight, FaGamepad ,FaStar  } from "react-icons/fa";
+import {  FaPlay, FaChevronRight } from "react-icons/fa";
 
 
 const Home = () => {
@@ -69,30 +69,38 @@ const Home = () => {
             {/* Modal */}
             {watchVideo && (
                 <div className="modal fade show" tabIndex="-1" role="dialog" style={{ display: 'block' }}>
-                <div className="modal-dialog" role="document">
-                    <div className="modal-content">
-                    <div className="modal-header">
-                        <h5 className="modal-title">Video</h5>
-                        <button type="button" className="btn-close close" onClick={handleClose}>
-                            {/* <span>&times;</span> */}
-                        </button>
+                    <div className="modal-dialog" role="document">
+                        <div className="modal-content">
+                        <div className="modal-header">
+                            <h5 className="modal-title">Video</h5>
+                            <button type="button" className="btn-close close" onClick={handleClose}>
+                                {/* <span>&times;</span> */}
+                            </button>
+                        </div>
+                        <div className="modal-body">
+                            {/* <video width="100%" height="389px" autoPlay>
+                                <source src={"Video"} type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video> */}
+                             <iframe width="100%" height="315" 
+                                src="https://www.youtube.com/embed/qB1ny63gzQ0?autoplay=1&mute=1" 
+                                title="YouTube video player" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen>
+                            </iframe>
+
+                        </div>
+                        <div className="modal-footer">
+                            <button type="button" className="btn btn-secondary" onClick={handleClose}>
+                            Close
+                            </button>
+                            {/* <button type="button" className="btn btn-primary">
+                            Save changes
+                            </button> */}
+                        </div>
+                        </div>
                     </div>
-                    <div className="modal-body">
-                        <video width="100%" height="389px" autoPlay>
-                            <source src={Video} type="video/mp4" />
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                    <div className="modal-footer">
-                        <button type="button" className="btn btn-secondary" onClick={handleClose}>
-                        Close
-                        </button>
-                        {/* <button type="button" className="btn btn-primary">
-                        Save changes
-                        </button> */}
-                    </div>
-                    </div>
-                </div>
                 </div>
             )}
 
@@ -107,7 +115,7 @@ const Home = () => {
                     <div className="col-md-5 col-lg-5 mb-2 mb-lg-0">
                         <div className="section-title text-start mb-0">
                             <h2 className="title">Why Remote Physios?</h2>
-                            <div className="desc mb-0 mb-lg-4">
+                            <div className="desc mb-0">
                                 <p>We understand how challenging it can be to find the time for clinic visits or home physiotherapy sessions. Remote Physios brings personalized, evidence-based physiotherapy directly to your home, guided by experts through teleconsultations and IoT-enabled equipment. Whether you're recovering from surgery, managing chronic pain, or need elderly care, our innovative approach ensures you heal safely and effectively, without the need for travel.</p>
                             </div>
                             <Link to="javascript:void(0)" className="primary-button">
@@ -146,10 +154,10 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="col-md-6 col-lg-6">
-                        <figure className="action-image text-start">
-                        <img src={product01} className="bg-image d-none d-lg-block" alt="" />
-                        <img src={product01} className="w-100 d-md-block d-lg-none" alt="" />
-                        <img src={product01} className="main-image d-none d-lg-block" alt="" />
+                        <figure className="text-start">
+                        {/* <img src={product01} className="bg-image d-none d-lg-block" alt="" />
+                        <img src={product01} className="w-100 d-md-block d-lg-none" alt="" /> */}
+                        <img src={product01} className="main-image d-lg-block" alt="" />
                         </figure>
                     </div>
                 </div>
@@ -159,10 +167,10 @@ const Home = () => {
             <div className="container-fluid container-lg">
                 <div className="row align-items-center flex-row-reverse">
                     <div className="col-md-6 col-xl-6 z2">
-                        <div className="section-title text-start white-title">
-                            <h2 className="title">Emotional Storytelling </h2>
-                            <div className="desc">
-                                <p>Healing Stories from Our Patients</p>
+                        <div className="section-title text-start white-title mb-0">
+                            <h2 className="title">Impact we Make</h2>
+                            <div className="desc mb-4">
+                                <h5 className='fw-bold'>Healing Stories from Our Patients</h5>
                             </div>
                         </div>
                         <div className="row g-4 g-xl-5">
@@ -238,12 +246,22 @@ const Home = () => {
                                 <h5 className='theme-color-text fw-bold'>Our Comprehensive Services</h5>
                             </div>
                             <ul className="settings-list">
-                                <li>Post-operative rehabilitation</li>
+                                {/* <li>Post-operative rehabilitation</li>
                                 <li>Chronic pain management</li>
                                 <li>Elderly physiotherapy</li>
-                               <li> Sports injury recovery</li>
-                               <li> Workplace ergonomics and rehabilitation</li>
-
+                                <li> Sports injury recovery</li>
+                                <li> Workplace ergonomics and rehabilitation</li> */}
+                                <li>Corporate Employee Wellness </li>
+                                <li>Elder Care Physiotherapy </li>
+                                <li>Joints pain and Stiffness </li>
+                                <li>Generalized Muscular Pains </li>
+                                <li>Post Surgical Recovery </li>
+                                <li>Recovery from Neurological conditions </li>
+                                <li>Cardiac Rehabilitation </li>
+                                <li>Pulmonary Rehabilitation </li>
+                                <li>Endurance Training </li>
+                                <li>Stretch your Muscles </li>
+                                <li>Balance and Coordination Training </li>
                             </ul>
                             <Link to="javascript:void(0)" className="primary-button">
                                 <span className="part front">Explore Our Services <span className="lsangleright icon"><FaChevronRight /></span></span>
@@ -360,16 +378,16 @@ const Home = () => {
                   <div className='row'>
                        <div className='col-md-7'>
                                 <div className='section-title text-start mb-0'>
-                                    <h2 className='title'>Call to Action </h2>
+                                    <h2 className='title'>Ready to Begin Your Recovery</h2>
                                     <p className='desc'>Take the first step towards a healthier, pain-free life. Book your free consultation with our expert physiotherapists today and experience the future of home-based care</p>
                                     <div className=''>
                                         <Link to="javascript:void(0)" className="primary-button me-3">
-                                            <span className="part front">Book Free Consultation <span className="lsangleright icon"><FaChevronRight /></span></span>
-                                            <span className="part back">Book Free Consultation <span className="lsangleright icon"><FaChevronRight /></span></span>
+                                            <span className="part front">Self Assessment <span className="lsangleright icon"><FaChevronRight /></span></span>
+                                            <span className="part back">Self Assessment <span className="lsangleright icon"><FaChevronRight /></span></span>
                                         </Link>
                                         <Link to="javascript:void(0)" className="primary-button primary-button-2">
-                                            <span className="part front">Contact Us for More Information <span className="lsangleright icon"><FaChevronRight /></span></span>
-                                            <span className="part back">Contact Us for More Information <span className="lsangleright icon"><FaChevronRight /></span></span>
+                                            <span className="part front">Whatsapp Now <span className="lsangleright icon"><FaChevronRight /></span></span>
+                                            <span className="part back">Whatsapp Now <span className="lsangleright icon"><FaChevronRight /></span></span>
                                         </Link>
                                     </div>
                                 </div>
@@ -378,6 +396,17 @@ const Home = () => {
                             <img style={{width:'245px'}} src={cta} />
                         </div>
                   </div>
+            </div>
+        </section>
+        
+        <section class="newsletter-section">
+            <div class="newsletter-container">
+                <h2>Subscribe Newsletter</h2>
+                <p>Subscribe to our newsletter for health tips and updates</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required />
+                    <button type="submit">Subscribe</button>
+                </form>
             </div>
         </section>
 

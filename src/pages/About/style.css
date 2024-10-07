@@ -1,0 +1,34 @@
+.about-bg  {
+    background-image:url(../../assets/images/theme-2/about-img.jpg);
+    background-size: 100%;
+    background-position: top;
+    height: 274px;
+    /* filter: blur(1px); */
+    background-repeat: no-repeat;
+}
+.aboutSection .heading {
+    position: relative;
+    margin-bottom: 45px;
+}
+.aboutSection .heading:before {
+    background: #ed1c24;
+    width: 81px;
+    position: absolute;
+    content: "";
+    bottom: -6px;
+    margin: auto;
+    height: 2px;
+    left: 0;
+    right: 0;
+}
+.product-box .title a {
+    color: var(--primary-color);
+}
+.aboutSection .product-box {
+    border-radius: 15px;
+}
+.aboutSection .product-box .thumb img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}

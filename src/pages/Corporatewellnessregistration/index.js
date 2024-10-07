@@ -3,7 +3,7 @@ import './style.css'
 import Header from '../../componet/Header';
 import Footer from '../../componet/Footer';
 
-const Appointment = () => {
+const Corporatewellnessregistration = () => {
   useEffect(() => {
     // Check if the page has been loaded before
     const hasReloaded = sessionStorage.getItem('hasReloaded');
@@ -24,9 +24,9 @@ const Appointment = () => {
           {/* <div class="opcrm-webform" id="opcrm-webform-66f110a634871595791e238d" data-form-url="https://forms.onepagecrm.com/66f110a634871595791e238d/"></div> */}
           <div style={{ textAlign: 'center', margin: '20px' }}>
             <iframe
-              src="https://forms.onepagecrm.com/66f110a634871595791e238d/"
+              src="https://forms.onepagecrm.com/66fa57bb348715e59b57dcfe/"
               width="100%"
-              height="1006"
+              height="1772px"
               frameBorder="0"
               title="OnePageCRM Form"
               allowFullScreen
@@ -40,4 +40,4 @@ const Appointment = () => {
     );
 };
 
-export default Appointment;
+export default Corporatewellnessregistration;

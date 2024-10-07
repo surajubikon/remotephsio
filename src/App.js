@@ -21,8 +21,21 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/index";
 import About from "./pages/About";
+import Services from "./pages/Services/index";
 import Contact from "./pages/Contact/index";
 import Appointment  from "./pages/Appointment/index";
+import Faq  from "./pages/Faq/index";
+import TearmConditon  from "./pages/Tearmconditon/index";
+import PrivacyPolicy  from "./pages/Privacypolicy/index";
+import Checkoutwz  from "./pages/Checkoutwz/index";
+import Corporatewellnessregistration  from "./pages/Corporatewellnessregistration/index";
+import Disclaimer  from "./pages/Disclaimer/index";
+import BookingPolicy   from "./pages/Bookingpolicy/index";
+
+ 
+
+
+
 
 function App() {
   return (
@@ -30,8 +43,17 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
          <Route path="/about" element={<About />} />
+         <Route path="/services" element={<Services />} />
          <Route path="/contact" element={<Contact />} /> 
          <Route path="/appointment" element={<Appointment />} /> 
+         <Route path="/Faq" element={<Faq />} /> 
+         <Route path="/Tearmconditon" element={<TearmConditon />} /> 
+         <Route path="/Privacypolicy" element={<PrivacyPolicy />} /> 
+         <Route path="/checkoutwz" element={<Checkoutwz />} /> 
+         <Route path="/corporatewellnessregistration" element={<Corporatewellnessregistration />} /> 
+         <Route path="/disclaimer" element={<Disclaimer />} /> 
+         <Route path="/bookingpolicy" element={<BookingPolicy />} /> 
+         
       </Routes>
     </Router>
   );

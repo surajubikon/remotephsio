@@ -21,7 +21,8 @@ CSS Indexing
 ===================*/
 
 :root {
-    --primary-color: #ed1c24;
+    --primary-color: #37afb3;
+    --secondary-color: #ed1c24;
     --body-color: #696969;
     --heading-color: #131313;
     --navbar-height: 94px;
@@ -29,7 +30,10 @@ CSS Indexing
 }
 
 .theme-color-text {
-    color: var(--primary-color);
+    color: var(--secondary-color) !important;
+}
+.theme-color-bg {
+    background-color : var(--primary-color) !important;
 }
 /*=== 1. Reset-CSS ===*/
 
@@ -200,7 +204,7 @@ img {
 }
 
 .section-title .title {
-    font-size: 42px;
+    font-size: 30px;
     margin-bottom: 24px;
     font-weight: 700;
 }
@@ -403,7 +407,6 @@ img {
 .mainmenu-area .nav-row .menu-items ul li>a.active,
 .mainmenu-area .nav-row .menu-items ul li:hover>a {
     color: var(--white-color);
-    text-shadow: 0 0 1px var(--heading-color);
 }
 .mainmenu-area.sticky .nav-row .menu-items ul li>a.active, .mainmenu-area .nav-row .menu-items ul li:hover>a {
     color: var(--primary-color);
@@ -417,7 +420,7 @@ img {
 }
 
 .mainmenu-area .nav-row .menu-items>ul>li {
-    padding: 0 20px;
+    padding: 0 10px;
     display: flex;
     align-items: center;
 }
@@ -487,7 +490,7 @@ img {
 }
 .bookConsultant
 {
-    background-color: #ed1c24;
+    background-color: #37afb3;
     padding: 9px 25px;
     border-radius: 7px;
     line-height: 23px;
@@ -556,7 +559,7 @@ img {
 }
 
 .header-area .main-title {
-    font-size: 52px;
+    font-size: 49px;
     font-weight: 700;
     margin-bottom: 32px;
     margin-right: -30px;
@@ -963,7 +966,7 @@ img {
     position: relative;
     z-index: 1;
     overflow: hidden;
-    margin: 60px 16px;
+    margin: 0;
     -webkit-box-shadow: 0px 25px 35px rgba(0, 0, 0, 0.04);
     box-shadow: 0px 25px 35px rgba(0, 0, 0, 0.04);
 }
@@ -1093,15 +1096,15 @@ img {
 }
 
 .social-menu li a {
-    width: 48px;
-    height: 48px;
-    line-height: 48px;
+    width: 44px;
+    height: 44px;
+    line-height: 43px;
     display: inline-block;
     text-align: center;
     background-color: #ffffff;
     color: var(--body-color);
     border-radius: 100px;
-    margin: 10px;
+    margin: 6px;
     -webkit-box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.05);
     box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.05);
 }

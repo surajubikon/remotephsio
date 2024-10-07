@@ -3,7 +3,7 @@ import './style.css'
 import Header from '../../componet/Header';
 import Footer from '../../componet/Footer';
 
-const Appointment = () => {
+const Checkoutwz = () => {
   useEffect(() => {
     // Check if the page has been loaded before
     const hasReloaded = sessionStorage.getItem('hasReloaded');
@@ -24,11 +24,12 @@ const Appointment = () => {
           {/* <div class="opcrm-webform" id="opcrm-webform-66f110a634871595791e238d" data-form-url="https://forms.onepagecrm.com/66f110a634871595791e238d/"></div> */}
           <div style={{ textAlign: 'center', margin: '20px' }}>
             <iframe
-              src="https://forms.onepagecrm.com/66f110a634871595791e238d/"
+              src="https://nas.io/checkout-widget?communityCode=REMOTE_PHYSIOS&communitySlug=%2Fremotephysios&buttonText=Explore%20our%20community&buttonTextColorHex=%23000&buttonBgColorHex=%23fccb1d&widgetTheme=light&backgroundColorHex=%23fff"
               width="100%"
-              height="1006"
+              height="300"
               frameBorder="0"
-              title="OnePageCRM Form"
+              title="REMOTE_PHYSIOS checkout widget"
+              referrerpolicy="no-referrer"
               allowFullScreen
             ></iframe>
           </div>
@@ -40,4 +41,4 @@ const Appointment = () => {
     );
 };
 
-export default Appointment;
+export default Checkoutwz;

@@ -48,11 +48,16 @@ const Header = () => {
                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <nav className="menu-items">
                         <ul>
-                            <li> <NavLink exact to="/" activeClassName="active"> Home </NavLink></li>
-                            <li><Link to="/">About us</Link></li>
+                            {/* <li><NavLink exact to="/" activeClassName="active"> Home </NavLink></li> */}
+                            <li><NavLink to="/about" activeClassName="active">About us</NavLink></li>
                              {/* <li><Link to="/about">About us</Link></li> */}
-                            <li><Link to="/">Product</Link></li>
-                            <li> <NavLink to="/contact" activeClassName="active"> Contact </NavLink></li>
+                            <li><NavLink to="/services" activeClassName="active">Services </NavLink></li>
+                            <li><Link to="/">Self Assessment </Link></li>
+                            <li><Link to="/">Community </Link></li>
+                            <li><Link to="/">Hiring </Link></li>
+                            {/* <li> <NavLink to="/contact" activeClassName="active"> Contact </NavLink></li>
+                            <li> <NavLink to="/faq" activeClassName="active"> Faq </NavLink></li> */}
+                            {/* <li><Link to='/checkoutwz' className='bookConsultant'>Community</Link></li> */}
                             <li><a href='appointment' className='bookConsultant'>Book Your Free Consultation </a></li>
                         </ul>
                     </nav>

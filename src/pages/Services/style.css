@@ -1,0 +1,47 @@
+.faq-bg  {
+    background-image:url(../../assets/images/theme-2/about-img.jpg);
+    background-size: 100%;
+    background-position: top;
+    height: 274px;
+    /* filter: blur(1px); */
+    background-repeat: no-repeat;
+}
+.service h1, .service h2 {
+    color: #2c3e50;
+    font-size: 21px;
+    font-weight: bold;
+}
+.service h3 {
+    font-size: 15px;
+    font-weight: 600;
+}
+.service h4 {
+    font-size: 16px;
+    font-weight: 600;
+}
+.service p {
+    font-size: 14px;
+}
+.service-section {
+    background-color: white;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.service-section h3 {
+    margin-top: 0;
+}
+.service .cta {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    font-size: 1.1em;
+    border-radius: 5px;
+}
+.service .cta a {
+    color: white;
+    text-decoration: none;
+}
