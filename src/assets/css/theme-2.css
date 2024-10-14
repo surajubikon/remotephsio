@@ -43,6 +43,11 @@ body {
     font-size: 18px;
     color: var(--body-color);
 }
+.btn-primary {
+    background-color : var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+}
+
 
 P:last-child {
     margin-bottom: 0;
@@ -915,12 +920,12 @@ img {
     box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
 }
 
-.testimonial-item:after {
+/* .testimonial-item:after {
     content: url(../images/theme-2/quote.png);
     position: absolute;
     right: 40px;
     bottom: 40px;
-}
+} */
 
 .testimonial-slider {
     max-height: 400px;
@@ -943,11 +948,31 @@ img {
     margin-right: 16px;
 }
 
+.testimonial-item .client-photo img{ 
+    border-radius: 100px;
+} 
 .testimonial-item .title {
     font-size: 24px;
     margin-bottom: 4px;
 }
-
+.testimonial-item .play-button {
+    position: absolute;
+    bottom: 24px;
+    right: 29px;
+}
+.testimonial-item .play-button .play-icon {
+    width: 34px;
+    height: 34px;
+    line-height: 30px;
+    margin-right: 5px;
+}
+.testimonial-item .play-button .play-icon svg {
+    width: 13px;
+}
+.testimonial-item .play-button:hover .play-icon {
+    background-color: #247274;
+    color: #a3fcff;
+}
 /* -- call-to-action-- */
 .call-to-action {
     padding: 76px 0;
@@ -1096,9 +1121,9 @@ img {
 }
 
 .social-menu li a {
-    width: 44px;
-    height: 44px;
-    line-height: 43px;
+    width: 37px;
+    height: 37px;
+    line-height: 37px;
     display: inline-block;
     text-align: center;
     background-color: #ffffff;
@@ -1236,4 +1261,13 @@ img {
 
   
   /*****/
+  .note-content {
+    max-height: 50px; /* Set a max height for the collapsed state */
+    overflow: hidden; /* Hide overflow for collapsed text */
+    transition: max-height 0.3s ease-in-out; /* Smooth transition */
+  }
+  
+  .note-content.expanded {
+    max-height: 200px; /* Set a larger max height for the expanded state */
+  }
   

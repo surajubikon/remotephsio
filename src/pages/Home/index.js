@@ -12,11 +12,15 @@ import servicesImg from '../../assets/images/theme-2/services-img.png';
 import client1 from '../../assets/images/theme-2/client-1.png';
 import client2 from '../../assets/images/theme-2/client-2.png';
 import client3 from '../../assets/images/theme-2/client-3.png';
+import defaultImg from '../../assets/images/theme-2/defaultImg.png';
+
 import product01 from '../../assets/images/theme-2/product01.png';
 import testimonialImage from "../../assets/images/theme-2/testimonial-image.png";
 import testimonialbg from '../../assets/images/theme-2/testimonial-bg.png';
 import cta from '../../assets/images/theme-2/cta.png';
-import Video from '../../assets/video/video.mp4';
+import Video from '../../assets/video/sweta.mp4';
+// import swetafd from '../../assets/images/theme-2/'
+
 
 
 import {  FaPlay, FaChevronRight } from "react-icons/fa";
@@ -25,9 +29,33 @@ import {  FaPlay, FaChevronRight } from "react-icons/fa";
 const Home = () => {
    
   const [watchVideo, setShow] = useState(false);
+  // Third modal state with a unique name
+  const [fiveModal, setFiveModal] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  
+
+  // Handlers for the Third modal
+  const handleCloseFiveModal = () => setFiveModal(false);
+  const handleShowFiveModal = () => setFiveModal(true);
+
+  const [isExpanded, setIsExpanded] = useState(false)
+  const [isExpanded2, setIsExpanded2] = useState(false)
+  const [isExpanded3, setIsExpanded3] = useState(false)
+  
+
+  const toggleNote = () => {
+    setIsExpanded(prevState => !prevState);
+  };
+  const toggleNote2 = () => {
+    setIsExpanded2(prevState => !prevState);
+  };
+  const toggleNote3 = () => {
+    setIsExpanded3(prevState => !prevState);
+  };
+  
   
   return (
     <div>
@@ -37,7 +65,7 @@ const Home = () => {
         <div className="header-area">
             <div className="container-fluid container-lg">
                 <div className="row align-items-center">
-                    <div className="col-lg-7">
+                    <div className="col-sm-6 col-lg-7 col-xxl-6">
                         <div className="header-content">
                             <h1 className="main-title">Personalized Physiotherapy, Delivered to Your Doorstep</h1>
                             <div className="desc">
@@ -108,7 +136,7 @@ const Home = () => {
             {watchVideo && <div className="modal-backdrop fade show"></div>}
 
 
-
+           
         <section className="actions-area section-padding">
             <div className="container-fluid container-lg">
                 <div className="row actions-one align-items-center">
@@ -118,10 +146,6 @@ const Home = () => {
                             <div className="desc mb-0">
                                 <p>We understand how challenging it can be to find the time for clinic visits or home physiotherapy sessions. Remote Physios brings personalized, evidence-based physiotherapy directly to your home, guided by experts through teleconsultations and IoT-enabled equipment. Whether you're recovering from surgery, managing chronic pain, or need elderly care, our innovative approach ensures you heal safely and effectively, without the need for travel.</p>
                             </div>
-                            <Link to="javascript:void(0)" className="primary-button">
-                                <span className="part front">Learn How It Works <span className="lsangleright icon"><FaChevronRight /></span></span>
-                                <span className="part back">Learn How It Works <span className="lsangleright icon"><FaChevronRight /></span></span>
-                            </Link>
                         </div>
                     </div>
                     <div className="col-md-6 col-lg-6 offset-md-1">
@@ -147,10 +171,7 @@ const Home = () => {
                                 <li>Guided Sessions, our physiotherapists guide you remotely through each session, controlling the equipment and monitoring progress.
                                 </li>
                             </ul>
-                            <Link to="javascript:void(0)" className="primary-button">
-                                <span className="part front">Learn More <span className="lsangleright icon"><FaChevronRight /></span></span>
-                                <span className="part back">Learn More <span className="lsangleright icon"><FaChevronRight /></span></span>
-                            </Link>
+                           
                         </div>
                     </div>
                     <div className="col-md-6 col-lg-6">
@@ -263,7 +284,7 @@ const Home = () => {
                                 <li>Stretch your Muscles </li>
                                 <li>Balance and Coordination Training </li>
                             </ul>
-                            <Link to="javascript:void(0)" className="primary-button">
+                            <Link to="/services" className="primary-button">
                                 <span className="part front">Explore Our Services <span className="lsangleright icon"><FaChevronRight /></span></span>
                                 <span className="part back">Explore Our Services <span className="lsangleright icon"><FaChevronRight /></span></span>
                             </Link>
@@ -280,7 +301,7 @@ const Home = () => {
         <section className="testimonial-area" id="testimonial-section">
             <div className="container-fluid container-lg">
                 <div className="row align-items-end">
-                    <div className="col-lg-5 g-md-4 g-xl-5 section-padding">
+                    <div className="col-lg-7 g-md-4 g-xl-7 section-padding">
                         <div className="section-title white-title text-start">
                             <h2 className="title mb-0">Testimonials</h2>
                             <p className='text-white' style={{fontSize:'15px'}}>Don't just take our word for it, hear directly from our patients.</p>
@@ -291,16 +312,21 @@ const Home = () => {
                                 slidesPerView={1}
                                 modules={[Autoplay]}  // Pass the modules in the Swiper component
                                 loop={true}
+                                // autoplay={{
+                                //     delay: 2000,
+                                //     disableOnInteraction: false,
+                                // }}
                                 autoplay={{
-                                    delay: 2000,
-                                    disableOnInteraction: false,
-                                }}
+                                    disableOnInteraction: false, // Optional, but recommended
+                                    delay: 1000,
+                                    pauseOnMouseEnter: true,
+                                  }}
                                 speed={600} // Transition duration in milliseconds
                                 style={{ transitionTimingFunction: 'linear' }} // Linear transition
                                 pagination={{ clickable: false }}
                                 navigation={false}
                                 >
-                                <SwiperSlide>
+                                {/* <SwiperSlide>
                                         <div className="testimonial-item">
                                             <div className="rating-star">
                                                 <i className="fas fa-star"></i>
@@ -318,8 +344,10 @@ const Home = () => {
                                             </figure>
                                             <h4 className="title">Rohit</h4>
                                             <div className="position">Age-42 </div>
+                                           
+                                         
                                         </div>
-                                </SwiperSlide>
+                                </SwiperSlide> */}
                                     
                                 <SwiperSlide>
                                     <div className="testimonial-item">
@@ -331,42 +359,89 @@ const Home = () => {
                                             <i className="fas fa-star"></i>
                                         </div>
                                         <div className="desc">
-                                            <p>“Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut voluptates repudiandae sint et molestiae.”
-                                            </p>
+                                            <div className="note">
+                                                <div className={`note-content ${isExpanded ? 'expanded' : 'collapsed'}`}>
+                                                    “I belong to Jabalpur and having problem of miniscous tear as well.as ligament tear .Its really tough for me to spend more than an hour daily to go to physiotherapy center for long time.With the help of Dr Anant ji and their IOT based machinery I can easily manage my daily routine and physiotherapy simultaneously. THANX to the whole team for providing this innovative technique of machinery which helps me alot.”
+                                                </div>
+                                                <button className='btn btn-primary btn-sm mt-3' onClick={toggleNote}>
+                                                    {isExpanded ? 'Read Less' : 'Read More'}
+                                                </button>
+                                            </div>
                                         </div>
                                         <figure className="client-photo">
                                             <img src={client2} alt="" />
                                         </figure>
-                                        <h4 className="title">Helena Paitora</h4>
-                                        <div className="position">Digital Marketer</div>
+                                        <h4 className="title">Sweta Jain</h4>
+                                        <div className="position">Patient</div>
+                                        <Link onMouseLeave={handleShowFiveModal} className="play-button ms-4"><span
+                                        className=" play-icon"><FaPlay /></span></Link>
                                     </div>
-                                </SwiperSlide>                            
-                                <SwiperSlide>
-                                    <div className="testimonial-item">
-                                        <div className="rating-star">
-                                            <i className="fas fa-star"></i>
-                                            <i className="fas fa-star"></i>
-                                            <i className="fas fa-star"></i>
-                                            <i className="fas fa-star"></i>
-                                            <i className="fas fa-star"></i>
+                                </SwiperSlide>        
+                                    
+                                    <SwiperSlide>
+                                        <div className="testimonial-item">
+                                            <div className="rating-star">
+                                                <i className="fas fa-star"></i>
+                                                <i className="fas fa-star"></i>
+                                                <i className="fas fa-star"></i>
+                                                <i className="fas fa-star"></i>
+                                                <i className="fas fa-star"></i>
+                                            </div>
+                                            <div className="desc">
+                                                <div className="note">
+                                                    <div className={`note-content ${isExpanded2 ? 'expanded' : 'collapsed'}`}>
+                                                        “I am Smita Jain ,residing in Thane (Maharashtra) I was suffering from chronic pain from Calcaneal Spur/ Heel spur. Walking and going out was difficult and painful for me,so I came to know about Physiqure and their online physio sessions.Dr.Anubha & Dr.Anant diagnose and explain the root causes of my issues and provided me with a clear understanding of my condition and the line of treatment.The beauty of Physiqure is bringing physiotherapy to your doorstep. The best part was modalities, they send the machines at home and train you or ur family member for operating the machines. So it’s a complete online Physiotherapy sessions at ur convenience and ur place ,providing  immediate relief and tangible results.Dr.Deepti from Physiqure was my physiotherapist.She is excellent and helped me in regaining strength and mobility.  I would recommend Physiqure as they have excellent & experienced team of Physiotherapists .”
+                                                    </div>
+                                                    <button className='btn btn-primary btn-sm mt-3' onClick={toggleNote2}>
+                                                        {isExpanded2 ? 'Read Less' : 'Read More'}
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <figure className="client-photo">
+                                                <img src={defaultImg} alt="" />
+                                            </figure>
+                                            <h4 className="title">Smita Modi Jain</h4>
+                                            <div className="position">Patient</div>
+                                            <Link onMouseLeave={handleShowFiveModal} className="play-button ms-4"><span
+                                            className=" play-icon"><FaPlay /></span></Link>
                                         </div>
-                                        <div className="desc">
-                                            <p>“Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut voluptates repudiandae sint et molestiae.”
-                                            </p>
+                                    </SwiperSlide>         
+                                    
+                                    <SwiperSlide>
+                                        <div className="testimonial-item">
+                                            <div className="rating-star">
+                                                <i className="fas fa-star"></i>
+                                                <i className="fas fa-star"></i>
+                                                <i className="fas fa-star"></i>
+                                                <i className="fas fa-star"></i>
+                                                <i className="fas fa-star"></i>
+                                            </div>
+                                            <div className="desc">
+                                                <div className="note">
+                                                    <div className={`note-content ${isExpanded3 ? 'expanded' : 'collapsed'}`}>
+                                                        “I belong to Jabalpur and having problem of miniscous tear as well.as ligament tear .Its really tough for me to spend more than an hour daily to go to physiotherapy center for long time.With the help of Dr Anant ji and their IOT based machinery I can easily manage my daily routine and physiotherapy simultaneously. THANX to the whole team for providing this innovative technique of machinery which helps me alot.”
+                                                    </div>
+                                                    <button className='btn btn-primary btn-sm mt-3' onClick={toggleNote3}>
+                                                        {isExpanded3 ? 'Read Less' : 'Read More'}
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <figure className="client-photo">
+                                                <img src={client1} alt="" />
+                                            </figure>
+                                            <h4 className="title">Apurva singhai</h4>
+                                            <div className="position">Patient</div>
+                                            <Link onMouseLeave={handleShowFiveModal} className="play-button ms-4"><span
+                                            className=" play-icon"><FaPlay /></span></Link>
                                         </div>
-                                        <figure className="client-photo">
-                                            <img src={client3} alt="" />
-                                        </figure>
-                                        <h4 className="title">Helena Paitora</h4>
-                                        <div className="position">Digital Marketer</div>
-                                    </div>
-                                </SwiperSlide>
+                                    </SwiperSlide>                            
+                               
                             </Swiper>    
                         </div>
                     </div>
-                    <div className="col-lg-6 offset-lg-1">
+                    <div className="col-lg-4 offset-lg-1">
                         <figure className="testimonial-image">
-                            <img src={testimonialImage} alt="" />
+                            <img src={testimonialImage} alt="" className='d-none' />
                             <img src={testimonialbg} className="testi-bg" alt="" />
                         </figure>
                     </div>
@@ -385,7 +460,7 @@ const Home = () => {
                                             <span className="part front">Self Assessment <span className="lsangleright icon"><FaChevronRight /></span></span>
                                             <span className="part back">Self Assessment <span className="lsangleright icon"><FaChevronRight /></span></span>
                                         </Link>
-                                        <Link to="javascript:void(0)" className="primary-button primary-button-2">
+                                        <Link to="https://wa.me/+917470478888?text=Hello%20there!" className="primary-button primary-button-2">
                                             <span className="part front">Whatsapp Now <span className="lsangleright icon"><FaChevronRight /></span></span>
                                             <span className="part back">Whatsapp Now <span className="lsangleright icon"><FaChevronRight /></span></span>
                                         </Link>
@@ -409,6 +484,40 @@ const Home = () => {
                 </form>
             </div>
         </section>
+
+            {/*FIVE */}
+            {fiveModal && (
+                        <div className="modal fade show" tabIndex="-1" role="dialog" style={{ display: 'block' }}>
+                            <div className="modal-dialog" role="document">
+                                <div className="modal-content">
+                                    <div className="modal-header">
+                                        <h5 className="modal-title">Review</h5>
+                                        <button type="button" className="btn-close close" onClick={handleCloseFiveModal}>
+                                            {/* <span>&times;</span> */}
+                                        </button>
+                                    </div> 
+                                    <div className="modal-body">
+                                        <video width="100%" height="auto" controls autoPlay muted>
+                                            <source src={Video} type="video/mp4" />
+                                            Your browser does not support the video tag.
+                                        </video>
+                                        {/* <iframe width="100%" height="315" 
+                                            src="https://www.youtube.com/embed/qB1ny63gzQ0?autoplay=1&mute=1" 
+                                            title="YouTube video player" 
+                                            frameborder="0" 
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                            allowfullscreen>
+                                        </iframe> */}
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    )}
+
+                    {/* Backdrop */}
+                    {fiveModal && <div className="modal-backdrop fade show"></div>}
+            {/**FIVE-END**/} 
 
       <Footer />
         

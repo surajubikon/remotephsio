@@ -54,7 +54,7 @@ const Header = () => {
                             <li><NavLink to="/services" activeClassName="active">Services </NavLink></li>
                             <li><Link to="/">Self Assessment </Link></li>
                             <li><Link to="/">Community </Link></li>
-                            <li><Link to="/">Hiring </Link></li>
+                            {/* <li><Link to="/">Hiring </Link></li> */}
                             {/* <li> <NavLink to="/contact" activeClassName="active"> Contact </NavLink></li>
                             <li> <NavLink to="/faq" activeClassName="active"> Faq </NavLink></li> */}
                             {/* <li><Link to='/checkoutwz' className='bookConsultant'>Community</Link></li> */}

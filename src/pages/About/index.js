@@ -4,6 +4,11 @@ import './style.css'
 import Header from '../../componet/Header';
 
 import product12 from '../../assets/images/theme-2/product-12.jpg';
+import anubha from '../../assets/images/theme-2/anubha.png';
+import anant from '../../assets/images/theme-2/anant.png';
+import rahulL from '../../assets/images/theme-2/rahulL.png';
+import binny from '../../assets/images/theme-2/binny.png';
+import shivshankar from '../../assets/images/theme-2/shivshankar.png';
 import Footer from '../../componet/Footer';
 // import Footer from '../../componet/Footer';
 
@@ -66,11 +71,11 @@ const About = () => {
                             <div class="col-sm-6 col-md-6 col-lg-4 ">
                                 <div class="product-box">
                                     <figure class="thumb">
-                                         <img src={product12} alt="" class="lazy" />
+                                         <img src={anubha} alt="" class="lazy" />
                                     </figure>
                                     <div class="content">
                                         <h3 class="title"><a href="javascript:void(0)">Anubha Singhai</a></h3>
-                                        <div class="price">Anubha Singhai is the Founder and Director for Remote Physios, With extensive experience in manag...</div>
+                                        <div class="price">Anubha Singhai is the Founder and Director for Remote Physios, With extensive experience in managing</div>
                                         <Link onClick={handleShowFirstModal} className='btn theme-color-bg mt-3 w-100 text-white'>Read More</Link>
                                     </div>
                                 </div>
@@ -78,7 +83,7 @@ const About = () => {
                             <div class="col-sm-6 col-md-6 col-lg-4 ">
                                 <div class="product-box">
                                     <figure class="thumb">
-                                         <img src={product12} alt="" class="lazy" />
+                                         <img src={anant} alt="" class="lazy" />
                                     </figure>
                                     <div class="content">
                                         <h3 class="title"><a href="javascript:void(0)">Anant Singh</a></h3>
@@ -91,7 +96,7 @@ const About = () => {
                             <div class="col-sm-6 col-md-6 col-lg-4 ">
                                 <div class="product-box">
                                     <figure class="thumb">
-                                         <img src={product12} alt="" class="lazy" />
+                                         <img src={shivshankar} alt="" class="lazy" />
                                     </figure>
                                     <div class="content">
                                         <h3 class="title"><a href="javascript:void(0)">Dr. Shiv Shankar Pawar</a></h3>
@@ -103,7 +108,7 @@ const About = () => {
                             <div class="col-sm-6 col-md-6 col-lg-4 ">
                                 <div class="product-box">
                                     <figure class="thumb">
-                                         <img src={product12} alt="" class="lazy" />
+                                         <img src={binny} alt="" class="lazy" />
                                     </figure>
                                     <div class="content">
                                         <h3 class="title"><a href="javascript:void(0)">Binny Jacob</a></h3>
@@ -115,7 +120,7 @@ const About = () => {
                             <div class="col-sm-6 col-md-6 col-lg-4 ">
                                 <div class="product-box">
                                     <figure class="thumb">
-                                         <img src={product12} alt="" class="lazy" />
+                                         <img src={rahulL} alt="" class="lazy" />
                                     </figure>
                                     <div class="content">
                                         <h3 class="title"><a href="javascript:void(0)">Rahul L Dubey</a></h3>
@@ -145,7 +150,7 @@ const About = () => {
                                         <div class="col-sm-12">
                                             <div class="product-box p-0 shadow-none">
                                                 <figure class="thumb">
-                                                        <img width={150} className='lazy rounded-circle' src={product12} alt="" />
+                                                        <img width={150} className='lazy rounded-circle' src={anubha} alt="" />
                                                 </figure>
                                                 <div class="content">
                                                     <h3 class="title"><a href="javascript:void(0)">Anubha Singhai</a></h3>
@@ -179,7 +184,7 @@ const About = () => {
                                         <div class="col-sm-12">
                                             <div class="product-box p-0 shadow-none">
                                                 <figure class="thumb">
-                                                        <img width={150} className='lazy rounded-circle' src={product12} alt="" />
+                                                        <img width={150} className='lazy rounded-circle' src={anant} alt="" />
                                                 </figure>
                                                 <div class="content">
                                                     <h3 class="title"><a href="javascript:void(0)">Anant Singh</a></h3>
@@ -212,7 +217,7 @@ const About = () => {
                                         <div class="col-sm-12">
                                             <div class="product-box p-0 shadow-none">
                                                 <figure class="thumb">
-                                                        <img width={150} className='lazy rounded-circle' src={product12} alt="" />
+                                                        <img width={150} className='lazy rounded-circle' src={shivshankar} alt="" />
                                                 </figure>
                                                 <div class="content">
                                                     <h3 class="title"><a href="javascript:void(0)">Dr. Shiv Shankar Pawar</a></h3>
@@ -245,7 +250,7 @@ const About = () => {
                                     <div class="col-sm-12">
                                         <div class="product-box p-0 shadow-none">
                                             <figure class="thumb">
-                                                    <img width={150} className='lazy rounded-circle' src={product12} alt="" />
+                                                    <img width={150} className='lazy rounded-circle' src={binny} alt="" />
                                             </figure>
                                             <div class="content">
                                                 <h3 class="title"><a href="javascript:void(0)">Binny Jacob</a></h3>
@@ -287,7 +292,7 @@ const About = () => {
                                         <div class="col-sm-12">
                                             <div class="product-box p-0 shadow-none">
                                                 <figure class="thumb">
-                                                        <img width={150} className='lazy rounded-circle' src={product12} alt="" />
+                                                        <img width={150} className='lazy rounded-circle' src={rahulL} alt="" />
                                                 </figure>
                                                 <div class="content">
                                                     <h3 class="title"><a href="javascript:void(0)">Rahul L Dubey</a></h3>

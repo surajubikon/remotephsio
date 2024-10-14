@@ -23,56 +23,22 @@ const contact = () => {
                 <div className="contact-detail">
 
                   <ul className="contact-ul nav flex-column">
-                    <li className='d-flex align-items-start'><i className="fa fa-location-dot"></i> <b> DK 2 / 373 Danish Kunj Kolar Road Bhopal 462042 MP India </b> </li>
+                    <li className='d-flex align-items-start'><i className="fa fa-location-dot"></i> 
+                    <a href='https://www.google.com/maps/place/Remote+Physios/@19.7201995,60.9294475,4z/data=!4m6!3m5!1s0x21223e3e7869f825:0x8a4ca8faf729316!8m2!3d21.0680074!4d82.7525294!16s%2Fg%2F11lt9nkb79?entry=ttu&g_ep=EgoyMDI0MTAwNS4wIKXMDSoASAFQAw%3D%3D'> <b> DK 2 / 373 Danish Kunj Kolar Road Bhopal 462042 MP India </b> </a> </li>
 
                     <li>
                       <i className="fa fa-phone"></i>
-                      <a href="tel:08510004495"><b>+91 747-047-8888</b></a>
+                      <a href="tel:+91 747-047-8888"><b>+91 747-047-8888</b></a>
                     </li>
 
                     <li>
                       <i className="fa-solid fa-envelope"></i>
-                      <a href="mailto:pardeepkumar4bjp@gmail.com"><b> Contact@remotephysios.com</b></a>
+                      <a href="mailto:Contact@remotephysios.com"><b> Contact@remotephysios.com</b></a>
                     </li>
                   </ul>
                 </div>
               </div>
 
-              <div className="col-md-6">
-                <form action="#" className="contFrm" method="POST">
-                  <div className="row">
-                    <div className="col-sm-6">
-                      <input type="text" name="name" placeholder="Your Name" className="inptFld" required />
-                    </div>
-
-                    <div className="col-sm-6">
-                      <input type="email" name="email" placeholder="Email Address" className="inptFld" required />
-                    </div>
-
-                    <div className="col-sm-6">
-                      <input type="tel" name="phone" placeholder="Phone Number" className="inptFld" required />
-                    </div>
-
-                    <div className="col-sm-6">
-                      <select className='inptFld'>
-                          <option> Booking Inquiry</option>
-                          <option> Rescheduling/Cancellation</option>
-                          <option> Technical Support</option>
-                          <option> General Information</option>
-                          <option> Other </option>
-                      </select>
-                    </div>
-
-                    <div className="col-12">
-                      <textarea className="inptFld" rows="" cols="" placeholder="Your Message..." required></textarea>
-                    </div>
-
-                    <div className="col-12">
-                      <input type="submit" name="submit" value="SUBMIT" className="inptBtn" />
-                    </div>
-                  </div>
-                </form>
-              </div>
             </div>
 
           </div>

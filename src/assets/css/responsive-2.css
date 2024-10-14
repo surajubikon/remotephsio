@@ -95,7 +95,7 @@
     .header-area {
         padding-top: 137px;
         background-size: cover;
-        background-position: -122px 31px;
+        /* background-position: -122px 0; */
     }
     .header-content {
         margin-bottom: 40px;

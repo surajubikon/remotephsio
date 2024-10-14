@@ -21,7 +21,7 @@
     left: 0;
     right: 0;
 }
-.product-box .title a {
+.aboutSection .product-box .title a {
     color: var(--primary-color);
 }
 .aboutSection .product-box {
@@ -31,4 +31,7 @@
     border-radius: 50%;
     width: 150px;
     height: 150px;
+}
+.product-box  .price, .product-box  ul {
+    text-align: justify;
 }

@@ -99,7 +99,7 @@
     margin: auto;
   }
   
-  .inptFld {
+  .appointment-bgail .inptFld {
     width: 100%;
     height: 50px;
     border: 0;
@@ -151,7 +151,7 @@
       margin-right: 6px;
     }
   
-    .inptFld {
+   .appointment-bg  .inptFld {
       height: 40px;
       margin: 0 0 10px;
       padding: 0 14px;

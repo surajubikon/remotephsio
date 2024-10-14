@@ -3,7 +3,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './style.css'
 import LogoWhite from '../../assets/images/theme-1/logo-w.png';
+import nasIcon from '../../assets/images//theme-2/nasIcon.png'
 import { FaThreads, FaXTwitter } from "react-icons/fa6";
+import { FaWhatsapp } from "react-icons/fa";
+
 
 const Footer = () => {
   return (
@@ -27,6 +30,7 @@ const Footer = () => {
                                     <li><Link to="https://www.linkedin.com/company/remotephysios"><i className="fa-brands fa-linkedin-in"></i></Link></li>
                                     <li><Link to="https://www.quora.com/profile/RemotePhysios"><i class="fa-brands fa-quora"></i></Link></li>
                                     <li><Link to="https://x.com/RemotePhysios"><FaXTwitter /></Link></li>
+                                    <li><Link to="https://nas.io/remotephysios"><img width="14px" src={nasIcon} /> </Link></li>
                                 </ul>
                             </div>
                         </div>
@@ -36,17 +40,17 @@ const Footer = () => {
                                 <div className='row'>
                                     <div className='col-sm-12 col-md-6'>
                                         <ul className="block-list">
-                                            <li><Link to="javascript:void(0)">Testimonials </Link></li>
-                                            <li><Link to="javascript:void(0)">FAQs</Link></li>
-                                            <li><Link to="javascript:void(0)">Contact us</Link></li>
-                                            <li><Link to="javascript:void(0)">Disclaimer </Link></li>
+                                            {/* <li><Link to="javascript:void(0)">Testimonials </Link></li> */}
+                                            <li><Link to="/faq">FAQs</Link></li>
+                                            <li><Link to="/Contact">Contact us</Link></li>
+                                            <li><Link to="/disclaimer">Disclaimer </Link></li>
                                         </ul>
                                     </div>
                                     <div className='col-sm-12 col-md-6'>
                                         <ul className="block-list">
-                                            <li><Link to="javascript:void(0)">Terms and Conditions</Link></li>
-                                            <li><Link to="javascript:void(0)">Privacy Policy </Link></li>
-                                            <li><Link to="javascript:void(0)">Booking Policy</Link></li>
+                                            <li><Link to="/Tearmconditon">Terms and Conditions</Link></li>
+                                            <li><Link to="/Privacypolicy">Privacy Policy </Link></li>
+                                            <li><Link to="/bookingpolicy">Booking Policy</Link></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -56,8 +60,8 @@ const Footer = () => {
                             <div className="footer-widget">
                                 <h4 className="widget-title">Support</h4>
                                 <ul className="block-list">
-                                    <li><Link to="javascript:void(0)">Contact@remotephysios.com</Link></li>
-                                    <li><Link to="javascript:void(0)">+91 747-047-8888</Link></li>
+                                    <li><Link to="mailto:Contact@remotephysios.com)">Contact@remotephysios.com</Link></li>
+                                    <li><Link to="tel:+91 747-047-8888">+91 747-047-8888</Link></li>
                                 </ul>
                             </div>
                         </div>
@@ -81,11 +85,14 @@ const Footer = () => {
                     </div>
                     <div className="row footer-bottom">
                         <div className="copyrights">
-                            <p>&copy;2023 All rights reserved. Powered by Remote Phisio</p>
+                            <p>&copy; 2024 All rights reserved. Powered by Remote Physios</p>
                         </div>
                     </div>
                 </div>
         </footer>
+        <Link to="https://wa.me/+917470478888?text=Hello%20there!" class="FaWhatsapp" target="_blank">
+             <FaWhatsapp />
+        </Link>
     </>
   );
 }
