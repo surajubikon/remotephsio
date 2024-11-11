@@ -1,14 +1,18 @@
 import React from 'react';
 import './style.css'
+import AboutSmall from '../../assets/images/theme-2/AboutSmall.svg';
+import Aboutbg from '../../assets/images/theme-2/about-img.jpg';
 import Header from '../../componet/Header';
 import Footer from '../../componet/Footer';
+import ZendeskWidget from '../../ZendeskWidget/index';
 
 const contact = () => {
     return (
   <>    
     <Header />  
-        <div className='contact-bg'>
-            {/* <h3>Contact Us</h3> */}
+        <div className='about-bg'>
+            <img className='d-sm-block d-md-none' src={AboutSmall} />
+            <img className='d-sm-none d-md-block d-none' src={Aboutbg} />
         </div>
         <section className="contact-sec sec-pad">
           <div className="container">
@@ -59,6 +63,7 @@ const contact = () => {
           </div>
         </div>  
     <Footer />    
+    <ZendeskWidget />
   </>
     );
 };

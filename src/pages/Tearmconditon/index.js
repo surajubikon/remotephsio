@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './style.css'
+import './style.css';
+import AboutSmall from '../../assets/images/theme-2/AboutSmall.svg';
+import Aboutbg from '../../assets/images/theme-2/about-img.jpg'; 
 import Header from '../../componet/Header';
 import Footer from '../../componet/Footer';
+import ZendeskWidget from '../../ZendeskWidget/index';
 
 const Tearmconditon = () => {
    
@@ -10,7 +13,9 @@ const Tearmconditon = () => {
       <>
         <Header />  
 
-        <div className='faq-bg'>
+        <div className='about-bg'>
+            <img className='d-sm-block d-md-none' src={AboutSmall} />
+            <img className='d-sm-none d-md-block d-none' src={Aboutbg} />
         </div>
         <div class="terms-container">
           <header class="terms-header">
@@ -100,6 +105,7 @@ const Tearmconditon = () => {
     </div>
 
         <Footer />
+        <ZendeskWidget />
       </>
     )  
 };

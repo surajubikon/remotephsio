@@ -3,13 +3,15 @@ import { Link } from 'react-router-dom';
 import './style.css'
 import Header from '../../componet/Header';
 
-import product12 from '../../assets/images/theme-2/product-12.jpg';
+import AboutSmall from '../../assets/images/theme-2/AboutSmall.svg';
+import Aboutbg from '../../assets/images/theme-2/about-img.jpg';
 import anubha from '../../assets/images/theme-2/anubha.png';
 import anant from '../../assets/images/theme-2/anant.png';
 import rahulL from '../../assets/images/theme-2/rahulL.png';
 import binny from '../../assets/images/theme-2/binny.png';
 import shivshankar from '../../assets/images/theme-2/shivshankar.png';
 import Footer from '../../componet/Footer';
+import ZendeskWidget from '../../ZendeskWidget/index';
 // import Footer from '../../componet/Footer';
 
 const About = () => {
@@ -50,6 +52,8 @@ const About = () => {
       <>
         <Header />  
         <div className='about-bg'>
+            <img className='d-sm-block d-md-none' src={AboutSmall} />
+            <img className='d-sm-none d-md-block d-none' src={Aboutbg} />
         </div>
         <div class="container aboutSection">
                 <div class="row g-4 flex-row-reverse mt-5">
@@ -57,14 +61,10 @@ const About = () => {
                         <div className='row'>
                              <div className='col-sm-12'>
                                 <h2 className='heading text-center'>About us </h2>
-                               <p>At Remote Physios, we believe in making high-quality physiotherapy accessible to everyone, right from the comfort of their homes. With our innovative, tech-enabled approach, we combine the expertise of certified physiotherapists with advanced IoT devices to deliver personalized care remotely. Our mission is to revolutionize the way people recover from injuries, manage chronic pain, and improve their physical health—without the need for time-consuming clinic visits.</p>
-
+                                <p>At Remote Physios, we believe in making high-quality physiotherapy accessible to everyone, right from the comfort of their homes. With our innovative, tech-enabled approach, we combine the expertise of certified physiotherapists with advanced IoT devices to deliver personalized care remotely. Our mission is to revolutionize the way people recover from injuries, manage chronic pain, and improve their physical health—without the need for time-consuming clinic visits.</p>
                                 <p> Founded by a team of experienced physiotherapists and healthcare technology experts, Remote Physio is designed to meet the modern demands of convenience and efficiency. Whether you are a busy professional struggling with back pain, a senior who needs regular care, or someone recovering from surgery, we create customized treatment plans to fit your unique needs.</p>
-
                                 <p>Our platform offers video consultations with trained physiotherapists, real-time monitoring, and data-driven insights, ensuring every session is effective and tailored to your progress. By blending healthcare with cutting-edge technology, we aim to empower individuals to take control of their well-being and live healthier, pain-free lives.</p>
-
                                 <p> Join us on a journey to better health with Remote Physio—because recovery should be convenient, accessible, and personalized.</p>
-                            
                              </div>   
                         </div>
                         <div class="row mt-0 g-4 mb-4 justify-content-center">
@@ -330,6 +330,7 @@ const About = () => {
             {/**FIVE-END**/}    
 
             <Footer />
+            <ZendeskWidget />
       </>
     )  
 };

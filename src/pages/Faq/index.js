@@ -1,20 +1,25 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './style.css'
+import AboutSmall from '../../assets/images/theme-2/AboutSmall.svg';
+import Aboutbg from '../../assets/images/theme-2/about-img.jpg'; 
 import Header from '../../componet/Header';
 import Footer from '../../componet/Footer';
+import ZendeskWidget from '../../ZendeskWidget/index';
 
 const Faq = () => {
    
     return (
       <>
         <Header />  
-        <div className='faq-bg'>
+        <div className='about-bg'>
+            <img className='d-sm-block d-md-none' src={AboutSmall} />
+            <img className='d-sm-none d-md-block d-none' src={Aboutbg} />
         </div>
         <div className='container'>
             <div className='my-5'>
                 <div className="accordion accordion-flush" id="accordionFlushExample">
-                    <h5 className='mb-4 theme-color-text'>General FAQs:</h5>
+                    <h5 className='mb-4 theme-color-text'>General FAQs</h5>
                     <div className="accordion-item">
                         <h2 className="accordion-header" id="flush-headingOne">
                         <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -22,7 +27,7 @@ const Faq = () => {
                         </button>
                         </h2>
                         <div id="flush-collapseOne" className="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                        <div className="accordion-body">PRemote Physios is an innovative, tech-enabled Physiotherapy service that allows patients to receive personalized care from certified Physiotherapists in the comfort of their own homes. Our services are delivered remotely using video consultations and IoT-enabled devices to track progress in real-time.
+                        <div className="accordion-body">Remote Physios is an innovative, tech-enabled Physiotherapy service that allows patients to receive personalized care from certified Physiotherapists in the comfort of their own homes. Our services are delivered remotely using video consultations and IoT-enabled devices to track progress in real-time.
                         </div>
                         </div>
                     </div>
@@ -86,7 +91,7 @@ const Faq = () => {
                         </div>
                     </div>
                     
-                    <h5 className='my-4 theme-color-text'>Booking & Sessions FAQs:</h5>
+                    <h5 className='my-4 theme-color-text'>Booking & Sessions FAQs</h5>
                     
                     <div className="accordion-item">
                         <h2 className="accordion-header" id="flush-heading6">
@@ -159,7 +164,7 @@ const Faq = () => {
     </div>
     </div>
 </div>
-<h5 className='my-4 theme-color-text'>IoT Devices FAQs:</h5>
+<h5 className='my-4 theme-color-text'>IoT Devices FAQs</h5>
 
 <div className="accordion-item">
     <h2 className="accordion-header" id="flush-heading11">
@@ -230,7 +235,7 @@ const Faq = () => {
         </div>
       </div>
 
-      <h5 className="theme-color-text">Treatment & Results FAQs:</h5>
+      <h5 className="theme-color-text">Treatment & Results FAQs</h5>
 
       {/* FAQ 16 */}
       <div className="accordion-item">
@@ -304,7 +309,7 @@ const Faq = () => {
 
       {/* Continue for additional FAQs */}
 
-      <h5 className='my-4 theme-color-text'>Technical & Support FAQs:</h5>
+      <h5 className='my-4 theme-color-text'>Technical & Support FAQs</h5>
             {/* FAQ 21 */}
       <div className="accordion-item">
         <h2 className="accordion-header" id="flush-heading21">
@@ -333,7 +338,7 @@ const Faq = () => {
         </div>
       </div>
 
-      <h5 className='my-4 theme-color-text'>Pricing & Payment FAQs:</h5>
+      <h5 className='my-4 theme-color-text'>Pricing & Payment FAQs</h5>
 
       {/* FAQ 23 */}
       <div className="accordion-item">
@@ -391,7 +396,7 @@ const Faq = () => {
         </div>
       </div>
 
-      <h5 className='my-4 theme-color-text'>Privacy & Security FAQs:</h5>
+      <h5 className='my-4 theme-color-text'>Privacy & Security FAQs</h5>
 
       {/* FAQ 27 */}
       <div className="accordion-item">
@@ -442,6 +447,7 @@ const Faq = () => {
         </div>
 
         <Footer />
+        <ZendeskWidget />
       </>
     )  
 };

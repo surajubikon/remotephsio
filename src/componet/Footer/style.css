@@ -30,6 +30,7 @@
     outline: none;
     font-size: 14px;
     background-color: #f4f4f4;
+    color: #000;
 }
 
 .newsletter-form button {
@@ -48,10 +49,10 @@
 }
 .FaWhatsapp{
 	position:fixed;
-	width:50px;
-	height:50px;
-	bottom:40px;
-	right:40px;
+	width:54px;
+	height:54px;
+	bottom:96px;
+	right:23px;
 	background-color:#25d366;
 	color:#FFF;
 	border-radius:50px;
@@ -63,3 +64,4 @@
 a.FaWhatsapp:hover {
     color: #fff;
 }
+

@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './style.css'
+import AboutSmall from '../../assets/images/theme-2/AboutSmall.svg';
+import Aboutbg from '../../assets/images/theme-2/about-img.jpg';
 import Header from '../../componet/Header';
 import Footer from '../../componet/Footer';
-import corporateWellness from '../../assets/images/theme-2/corporateWellness.png';
-import { width } from '@fortawesome/free-solid-svg-icons/fa0';
+import ZendeskWidget from '../../ZendeskWidget/index';
+
 
 
 const Services = () => {
@@ -12,7 +14,10 @@ const Services = () => {
     return (
         <>
             <Header />
-            <div className='faq-bg'></div>
+            <div className='about-bg'>
+                <img className='d-sm-block d-md-none' src={AboutSmall} />
+                <img className='d-sm-none d-md-block d-none' src={Aboutbg} />
+            </div>
 
             <div className='service my-5'>
                 <div class="container">
@@ -197,6 +202,7 @@ const Services = () => {
             </div>
 
             <Footer />
+            <ZendeskWidget />
         </>
     )
 };

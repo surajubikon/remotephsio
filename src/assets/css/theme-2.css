@@ -110,7 +110,6 @@ img {
 }
 .primary-button.primary-button-2 {
     background-color: #131313;
-    margin-top: 18px !important;
  }
 
 .primary-button:hover {
@@ -214,10 +213,6 @@ img {
     font-weight: 700;
 }
 
-.section-title .primary-button {
-    margin-top: 48px;
-}
-
 .section-title.white-title .title {
     color: #ffffff;
 }
@@ -297,7 +292,7 @@ img {
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
-    padding: 23px 0;
+    padding: 0px 0;
 }
 
 .mainmenu-area .nav-row .nav-logo {
@@ -404,6 +399,16 @@ img {
     display: inline-block;
 }
 
+.mainmenu-area .nav-row .menu-items ul li > a {
+    line-height: 96px;
+}
+
+.mainmenu-area .nav-row .menu-items ul li:last-child a {
+    line-height: initial;
+}
+.mainmenu-area .nav-row .menu-items ul li ul li a {
+    line-height: 30px;
+}
 .mainmenu-area.sticky .nav-row .menu-items ul li a {
     color: var(--heading-color);
     display: inline-block;
@@ -411,7 +416,7 @@ img {
 
 .mainmenu-area .nav-row .menu-items ul li>a.active,
 .mainmenu-area .nav-row .menu-items ul li:hover>a {
-    color: var(--white-color);
+    color: var(--primary-color);
 }
 .mainmenu-area.sticky .nav-row .menu-items ul li>a.active, .mainmenu-area .nav-row .menu-items ul li:hover>a {
     color: var(--primary-color);
@@ -435,7 +440,7 @@ img {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -29px;
+    bottom: 0;
     width: 100%;
     height: 3px;
     background-color: var(--white-color);
@@ -515,6 +520,9 @@ img {
     z-index: 2;
     box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.1);
     opacity: 0;
+    width: 309px;
+    height: 163px;
+    overflow: auto;
 }
 
 .mainmenu-area .nav-row .menu-items li ul ul {
@@ -557,7 +565,6 @@ img {
 .header-area {
     background-image: url('../images/theme-2/header-bg-iot.png');
     padding-top: var(--navbar-height);
-    /* background: url('../images/theme-2/header-overlay.png') no-repeat scroll right bottom / cover, url('../images/theme-2/header-bg.jpg') no-repeat scroll center center / cover;*/ 
     background-blend-mode: overlay;
     padding-bottom: 95px;
     background-size: cover;
@@ -928,7 +935,7 @@ img {
 } */
 
 .testimonial-slider {
-    max-height: 400px;
+    height: auto;
 }
 
 .testimonial-item .rating-star {
@@ -1268,6 +1275,9 @@ img {
   }
   
   .note-content.expanded {
-    max-height: 200px; /* Set a larger max height for the expanded state */
+    max-height: 100% /* Set a larger max height for the expanded state */
   }
   
+  .iulJbw.iulJbw.iulJbw {
+    background-color: #37afb3 !important;
+}

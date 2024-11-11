@@ -1,5 +1,4 @@
 // import logo from './logo.svg';
-import logo from './assets/images/theme-1/logo-dark.svg';
 import './App.css';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -17,11 +16,14 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 
 // App.js
-import React from "react";import { BrowserRouter as Router, Route, Routes  } from 'react-router-dom';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes  } from 'react-router-dom';
+import GoogleAnalytics from './componet/GoogleAnalytics/index';
 import ScrollRestoration from './ScrollRestoration';
 import Home from "./pages/Home/index";
 import About from "./pages/About";
 import Demo from "./pages/demo";
+// import ZendeskWidget from "./ZendeskWidget/index";
 
 import Services from "./pages/Services/index";
 import Servicescorporate from "./pages/Services/servicesCorporate";
@@ -46,18 +48,15 @@ import Corporatewellnessregistration  from "./pages/Corporatewellnessregistratio
 import Disclaimer  from "./pages/Disclaimer/index";
 import BookingPolicy   from "./pages/Bookingpolicy/index";
 
- 
-
-
-
-
 function App() {
   return (
     <Router>
         <ScrollRestoration />
+        <GoogleAnalytics trackingId="G-6T0CB0CPGJ" />
       <Routes>
         <Route path="/" element={<Home />} />
          <Route path="/demo" element={<Demo />} />
+         {/* <Route path="/zendeskwidget" element={<ZendeskWidget />} /> */}
          <Route path="/about" element={<About />} />
           
              <Route path="/services" element={<Services />} />

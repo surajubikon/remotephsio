@@ -28,13 +28,13 @@ const Footer = () => {
                                     <li><Link to="https://www.threads.net/@remote_physios"><FaThreads /> </Link></li>
                                     <li><Link to="https://www.instagram.com/remote_physios/"><i className="fa-brands fa-instagram"></i></Link></li>
                                     <li><Link to="https://www.linkedin.com/company/remotephysios"><i className="fa-brands fa-linkedin-in"></i></Link></li>
-                                    <li><Link to="https://www.quora.com/profile/RemotePhysios"><i class="fa-brands fa-quora"></i></Link></li>
+                                    <li><Link to="https://www.quora.com/profile/RemotePhysios"><i className="fa-brands fa-quora"></i></Link></li>
                                     <li><Link to="https://x.com/RemotePhysios"><FaXTwitter /></Link></li>
                                     <li><Link to="https://nas.io/remotephysios"><img width="14px" src={nasIcon} /> </Link></li>
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-md-3 col-lg-5 col-sm-6 mb-5 mb-lg-0">
+                        <div className="col-md-6 col-lg-5 col-sm-6 mb-5 mb-lg-0">
                             <div className="footer-widget">
                                 <h4 className="widget-title">Following links </h4>
                                 <div className='row'>
@@ -46,7 +46,7 @@ const Footer = () => {
                                             <li><Link to="/disclaimer">Disclaimer </Link></li>
                                         </ul>
                                     </div>
-                                    <div className='col-sm-12 col-md-6'>
+                                    <div className='col-sm-12 col-md-6 mt-4 mt-md-0'>
                                         <ul className="block-list">
                                             <li><Link to="/Tearmconditon">Terms and Conditions</Link></li>
                                             <li><Link to="/Privacypolicy">Privacy Policy </Link></li>
@@ -56,7 +56,7 @@ const Footer = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-3 col-lg-3 col-sm-6 mb-5 mb-lg-0">
+                        <div className="col-md-6 col-lg-3 col-sm-6 mb-5 mb-lg-0">
                             <div className="footer-widget">
                                 <h4 className="widget-title">Support</h4>
                                 <ul className="block-list">
@@ -90,10 +90,10 @@ const Footer = () => {
                     </div>
                 </div>
         </footer>
-        <Link to="https://wa.me/+917470478888?text=Hello%20there!" class="FaWhatsapp" target="_blank">
+        {/* <Link to="https://wa.me/+917470478888?text=Hello%20there!" className="FaWhatsapp" target="_blank">
              <FaWhatsapp />
-        </Link>
-    </>
+        </Link> */}
+    </> 
   );
 }
 

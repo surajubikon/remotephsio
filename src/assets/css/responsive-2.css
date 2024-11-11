@@ -133,16 +133,7 @@
     }
 } 
 
-/* @media screen and (min-width: 768px) {
-    .feature-box-2.align-right {
-        padding-left: 0;
-        padding-right: 88px;
-        text-align: right;
-    }
-    .feature-box-2.align-right .icon {
-        left: auto;
-        right: 0;
-    }
+ @media screen and (min-width: 768px) {
     .mainmenu-area .nav-row .menu-items li:hover>ul {
         transform: scaleY(1);
         opacity: 1;
@@ -154,6 +145,17 @@
     .mainmenu-area .nav-row .menu-items>ul>li {
         padding: 0 13px;
     }
+ }    
+/*    .feature-box-2.align-right {
+        padding-left: 0;
+        padding-right: 88px;
+        text-align: right;
+    }
+    .feature-box-2.align-right .icon {
+        left: auto;
+        right: 0;
+    }
+  
     .header-area {
         padding-top: 178px !important;
         padding-bottom: 25px;

@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import AboutSmall from '../../assets/images/theme-2/AboutSmall.svg';
+import Aboutbg from '../../assets/images/theme-2/about-img.jpg';
 import './style.css'
 import Header from '../../componet/Header';
 import Footer from '../../componet/Footer';
+import ZendeskWidget from '../../ZendeskWidget/index';
 
 const Bookingpolicy = () => {
    
@@ -10,7 +13,9 @@ const Bookingpolicy = () => {
       <>
         <Header />  
 
-        <div className='faq-bg'>
+        <div className='about-bg'>
+            <img className='d-sm-block d-md-none' src={AboutSmall} />
+            <img className='d-sm-none d-md-block d-none' src={Aboutbg} />
         </div>
         
         
@@ -108,6 +113,7 @@ const Bookingpolicy = () => {
 
 
         <Footer />
+        <ZendeskWidget />
       </>
     )  
 };

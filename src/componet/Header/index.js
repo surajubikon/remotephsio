@@ -51,14 +51,28 @@ const Header = () => {
                             {/* <li><NavLink exact to="/" activeClassName="active"> Home </NavLink></li> */}
                             <li><NavLink to="/about" activeClassName="active">About us</NavLink></li>
                              {/* <li><Link to="/about">About us</Link></li> */}
-                            <li><NavLink to="/services" activeClassName="active">Services </NavLink></li>
-                            <li><Link to="/">Self Assessment </Link></li>
-                            <li><Link to="/">Community </Link></li>
+                            <li><NavLink to="/services" activeClassName="active">Services </NavLink>
+                                <ul>
+                                  <li> <NavLink to="/services/corporate">  Corporate Employee Wellness</NavLink> </li>
+                                  <li> <NavLink to="/services/elder">  Elder Care Physiotherapy</NavLink> </li>
+                                  <li> <NavLink to="/services/joint">  Joints pain and Stiffness</NavLink> </li>
+                                  <li> <NavLink to="/services/generalized">  Generalized Muscular Pains</NavLink> </li>
+                                  <li> <NavLink to="/services/surgical">  Post Surgical Recovery</NavLink> </li>
+                                  <li> <NavLink to="/services/neurological">  Recovery from Neurological conditions</NavLink> </li>
+                                  <li> <NavLink to="/services/cardiac">  Cardiac Rehabilitation</NavLink> </li>
+                                  <li> <NavLink to="/services/pulmonary">  Pulmonary Rehabilitation</NavLink> </li>
+                                  <li> <NavLink to="/services/endurance">  Endurance Training</NavLink> </li>
+                                  <li> <NavLink to="/services/stretch">  Stretch your Muscles</NavLink> </li>
+                                  <li> <NavLink to="/services/balance">  Balance and Coordination Training</NavLink> </li>
+                                </ul>
+                            </li>
+                            <li><Link to="https://remotephysios.in/remote/home">Self Assessment </Link></li>
+                            <li><Link to="https://nas.io/remotephysios">Community </Link></li>
                             {/* <li><Link to="/">Hiring </Link></li> */}
                             {/* <li> <NavLink to="/contact" activeClassName="active"> Contact </NavLink></li>
                             <li> <NavLink to="/faq" activeClassName="active"> Faq </NavLink></li> */}
                             {/* <li><Link to='/checkoutwz' className='bookConsultant'>Community</Link></li> */}
-                            <li><a href='appointment' className='bookConsultant'>Book Your Free Consultation </a></li>
+                            <li><Link to='/appointment' className='bookConsultant'>Book Your Free Consultation </Link></li>
                         </ul>
                     </nav>
                    </div> 
